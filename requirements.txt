@@ -1,0 +1,14 @@
+# PRJ-03: ClinicaGuard Dependencies
+scikit-learn>=1.5.0
+xgboost>=2.0.0
+lightgbm>=4.0.0
+mlflow>=2.15.0
+evidently>=0.7.0
+pgvector>=0.3.0
+psycopg2-binary>=2.9.0
+sentence-transformers>=3.0.0
+pandas>=2.0.0
+numpy>=1.24.0
+streamlit>=1.40.0
+pytest>=8.0.0
+pyyaml>=6.0.0

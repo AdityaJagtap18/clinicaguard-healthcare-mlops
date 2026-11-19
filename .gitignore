@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.pytest_cache/
+
+# MLflow
+mlruns/
+mlartifacts/
+.trash/
+
+# Data & Models
+models/*.joblib
+models/*.json
+data/embeddings/*.npy
+data/embeddings/*.npz
+data/raw/*.parquet
+!data/raw/.gitkeep
+data/reference/*.parquet
+!data/reference/.gitkeep
+data/current/*.parquet
+!data/current/.gitkeep
+
+# Environment
+.env
+*.log
