@@ -9,6 +9,12 @@ import json
 import os
 from typing import Any, Dict, List, Optional
 import pandas as pd
+import pandas.core.dtypes.common as pddc
+import pandas.api.types as pat
+
+if not hasattr(pddc, "infer_dtype_from_object"):
+    pddc.infer_dtype_from_object = getattr(pat, "infer_dtype", lambda x: "object")
+
 from evidently import Report
 from evidently.presets import DataDriftPreset
 
